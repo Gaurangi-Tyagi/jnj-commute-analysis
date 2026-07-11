@@ -21,8 +21,10 @@ Given a fixed workplace location, the analysis answers:
 | File | Description |
 |---|---|
 | `commute_analysis.ipynb` | Main analysis notebook containing all steps, code, and explanations |
-| `commute_map.html` | Standalone interactive map (workplace, stations, employees by adoption tier) |
+| `commute_map.html` | Standalone interactive map (workplace, stations, employees by adoption tier) — [view live](https://htmlpreview.github.io/?https://github.com/Gaurangi-Tyagi/jnj-commute-analysis/blob/main/commute_map.html) |
 | `README.md` | This file |
+
+Note: GitHub's built-in notebook preview does not render the embedded interactive map inside `commute_analysis.ipynb`, since it cannot execute the underlying JavaScript. To view the full interactive map, use the live link above, or download `commute_map.html` and open it directly in a browser.
 
 ## Methodology
 
@@ -99,6 +101,15 @@ In a production setting, these components would be replaced with a live routing 
 2. Open `commute_analysis.ipynb` in Jupyter or VS Code and select the `jnj-commute` kernel.
 3. Run all cells in order.
 4. The interactive map is also available separately as `commute_map.html`.
+
+## Development Note
+
+This project was developed with assistance from an AI tool (Claude) for
+code drafting, debugging, and explanation support. All decisions on
+methodology, assumptions, and approach including the choice to model
+home-to-station access by distance, the fallback to a curated station
+dataset after the Overpass API proved unreliable, and the scoring
+weights used for adoption likelihood were made by the author.
 
 ## Author
 
